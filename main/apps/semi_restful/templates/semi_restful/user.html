@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Info</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container jumbotron">
+        <h2>Users {{ users.id }}</h2>
+        <p>Full Name: {{users.first_name}} {{users.last_name}}</p>
+        <p>Email: {{users.email}}</p>
+        <p>Created At: {{users.created_at}}</p>
+        <a href="/edit/{{users.id}}">Edit</a> | <a href="/delete/{{users.id}}">Delete</a> | <a href="/">Go Back</a>
+    </div>
+</body>
+
+</html>
